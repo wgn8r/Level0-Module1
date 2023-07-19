@@ -19,8 +19,12 @@ def mouse_pressed(event):
     
     # This defines the x and y coordinated of all three points
     # of a triangle
-    points = [x, y, x - 50, y + 100, x + 50, y + 100]
+    points = [x, y, x - 50, y + 100, x + 50, y + 1000]
+    points1 = [x, y, x - 100, y + 100, x + 100, y + 10000]
+
     canvas.create_polygon(points, fill='gray', width=2) # draws triangle
+    canvas.create_polygon(points1, fill='green', width=1)
+
     
     # 1. Add details to your rocket to make it look better. You can look at
     #    rocket.png for inspiration.
